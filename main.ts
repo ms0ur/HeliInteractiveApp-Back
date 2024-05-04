@@ -7,6 +7,6 @@ app.use(router);
 
 router.get("/",
     defineEventHandler((event) => {
-        return {message: "Hello World"}
+        return "HeliInteractiveApp Backend service 0.0.1 working here! Github: <a href='https://github.com/ms0ur/HeliInteractiveApp-Back'>https://github.com/ms0ur/HeliInteractiveApp-Back</a>"
     })
 )
