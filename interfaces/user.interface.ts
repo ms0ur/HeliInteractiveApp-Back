@@ -5,4 +5,9 @@ export interface IUser {
     nickname: string;
     isLawMaker: boolean;
     isAdmin: boolean;
+    pasport: [{
+        number: string;
+        cityOfIssue: string;
+        dateOfIssue: Date;
+    }]
 }
