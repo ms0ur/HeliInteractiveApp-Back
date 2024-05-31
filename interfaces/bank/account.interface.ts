@@ -1,7 +1,8 @@
 import { ObjectId } from "mongoose";
 
 export interface IAccount {
-    _id: ObjectId
+    _id: ObjectId,
+    bankID: ObjectId
     /**
      * Balance on account
      */

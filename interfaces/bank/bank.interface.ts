@@ -7,14 +7,6 @@ export interface IBank {
      * */
     user: mongoose.Schema.Types.ObjectId
     /**
-     * Bank accounts of user
-     */
-    accounts: mongoose.Schema.Types.ObjectId[]
-    /**
-     * Bank operations of user
-     */
-    operations: mongoose.Schema.Types.ObjectId[]
-    /**
      * Bank restrictions of user
      */
     restrictions: [{

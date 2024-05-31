@@ -6,13 +6,31 @@ export const OperationSchema = new mongoose.Schema<IOperation>({
         type: String,
         enum: ["DEPOSIT", "WITHDRAWAL", "TRANSFER", "PAYMENT"]
     },
-    accountFrom: {
-        type: Types.ObjectId,
-        ref: "Account"
+    account: {
+        from: {
+            type: Types.ObjectId,
+            ref: "Account"
+        },
+        to: {
+            type: Types.ObjectId,
+            ref: "Account"
+        }
     },
-    accountTo: {
-        type: Types.ObjectId,
-        ref: "Account"
+    user: {
+        from: {
+            type: Types.ObjectId,
+            ref: "User"
+        },
+        to: {
+            type: Types.ObjectId,
+            ref: "User"
+        }
+    },
+    hotlink: {
+        type: String
+    },
+    completed: {
+        type: Boolean
     },
     amount: {
         type: Number

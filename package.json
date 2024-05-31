@@ -10,7 +10,15 @@
   "description": "",
   "dependencies": {
     "@types/mongoose": "^5.11.97",
+    "axios": "^1.7.2",
+    "fs": "^0.0.1-security",
     "h3": "^1.11.1",
-    "mongoose": "^8.3.3"
+    "markdown-it": "^14.1.0",
+    "mongoose": "^8.3.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.1",
+    "@types/node": "^20.13.0"
   }
 }

@@ -6,18 +6,6 @@ export const BankSchema = new mongoose.Schema<IBank>({
         type: Types.ObjectId,
         ref: "User"
     },
-    accounts: [
-        {
-            type: Types.ObjectId,
-            ref: "Account"
-        }
-    ],
-    operations: [
-        {
-            type: Types.ObjectId,
-            ref: "Operation"
-        }
-    ],
     restrictions: [
         {
             active: {
