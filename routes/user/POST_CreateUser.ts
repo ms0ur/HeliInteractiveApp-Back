@@ -1,7 +1,6 @@
 import { H3Event } from "h3";
 
 export default {
-  method: "post",
   values: async (event: H3Event) => {
     // Extract the user data from the request body
     const { username, email, password } = await event.context.json();

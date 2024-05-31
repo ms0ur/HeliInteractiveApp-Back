@@ -1,7 +1,6 @@
 import { H3Event } from "h3";
 
 export default {
-  method: "get",
   values: (event: H3Event) => {
     return {
       statusCode: 200,
